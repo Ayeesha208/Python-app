@@ -1,0 +1,11 @@
+# Connecting with Azure vm using using id_rsa which is downloaded from artifacts
+
+# cd <location of id_rsa>
+# ls    #find for id_rsa
+# chmod 600 id_rsa # to give permissions to private key
+
+# az vm list-ip-addresses --name <VM_NAME> --resource-group <RESOURCE_GROUP> --output table
+#      eg :   az vm list-ip-addresses --name test-vm --resource-group test-rg --output table
+
+# ssh -i id_rsa azureuser@<vm ip address>
+#     eg:   ssh -i id_rsa azureuser@172.171.193.239
