@@ -1,4 +1,4 @@
-name: Deploy Node.js App to Azure VM
+name: Deploy python App to Azure VM
 
 on:
   push:
