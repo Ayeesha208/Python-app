@@ -1,3 +1,10 @@
+#azure configuration
+AZ login
+or
+az login --tenant <tenent id>
+az login --tenant ba255db9-2ad5-4db9-8650-6be3a3aeec5e
+
+
 # Connecting with Azure vm using using id_rsa which is downloaded from artifacts
 
 # cd <location of id_rsa>
@@ -8,4 +15,6 @@
 #      eg :   az vm list-ip-addresses --name test-vm --resource-group test-rg --output table
 
 # ssh -i id_rsa azureuser@<vm ip address>
-#     eg:   ssh -i id_rsa azureuser@172.171.193.239
+#     eg:   ssh -i <key name> azureuser@172.171.193.239
+   ssh -i Azure_key_nextwalth.pem azureuser@40.81.234.167
+
